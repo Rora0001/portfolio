@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/delfin.webp" alt=""></a>
+        </div>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="projekter.html">Projekter</a></li>
+                <li><a href="om.html">Om mig</a></li>
+            </ul>
+        </nav>
+
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <div class="projekter_menu">
+        <a href="02.html">
+            <div class="02">02</div>
+        </a>
+        <a href="03.html">
+            <div class="03">03</div>
+        </a>
+        <a href="04.html">
+            <div class="04 current">04</div>
+        </a>
+        <a href="05.html">
+            <div class="05">05</div>
+        </a>
+        <a href="06.html">
+            <div class="06">06</div>
+        </a>
+    </div>
+
+    <h3>GRUNDLÆGGENDE ANIMATION</h3>
+
+    <div class="intro">I tema 04 blev vi introduceret til programmeringssproget JavaScript. Vores opgave var at skabe et
+        spil ved hjælp af CSS-animationer. Arbejdet med formgivning af grafiske elementer gav mig en dybere forståelse
+        for Adobe
+        Illustrator samt jeg har lært om moderne konventioner og stilarter.
+        Derudover lærte jeg at arbejde med aktivitets- og statemachine-diagrammer, hvilket er et nyttigt værktøj til at
+        holde styr på elementer og aktivteter i et projekt og en oversigt over hvordan forskellige elementer reagerer.
+
+    </div>
+
+    <div class="tekst_resultat">
+        <p>Følg med i min process nedenfor</p>
+        <a href="http://rosecreatives.dk/kea/04_animation/website_spil/" target="_blank" class="my-button">Spillet</a>
+    </div>
+
+
+    <div class="carousel-container">
+        <div class="img_resultat carousel">
+            <img src="img_04/resultat5.webp" alt="Beskrivelse af billedet">
+            <img src="img_04/resultat1.webp" alt="Beskrivelse af billedet">
+            <img src="img_04/resultat2.webp" alt="Beskrivelse af billedet">
+            <img src="img_04/resultat3.webp" alt="Beskrivelse af billedet">
+            <img src="img_04/resultat4.webp" alt="Beskrivelse af billedet">
+        </div>
+    </div>
+
+
+
+    <h2>Min process</h2>
+
+    <h4>Research og idé fasen</h4>
+    <div class="grid_ide">
+        <div class="img_ide">
+            <img src="img_04/mood.webp" alt="Beskrivelse af billedet">
+        </div>
+        <div class="tekst_ide">
+            <div class="underoverskrift_undersider">Stilart:</div>
+            <p>Min valgte stilart er flat design, da det minimalistiske og rene udtryk passer godt til mit emne samt
+                landskabet og mine
+                figurer. De farver jeg har valgt, er pastel, rolige og natur farver der giver en blød og afslappet
+                stemning. Den
+                lyserøde farver er også med til at give en rar og hyggelig følelse.</p>
+        </div>
+    </div>
+
+    <h4>Prototype</h4>
+    <div class="grid_prototype">
+        <div class="tekst_prototype">
+            <a href="https://www.youtube.com/watch?v=UtkRUez1LFA" target="_blank" class="my-button">Papirs-prototype
+                video</a>
+            <p>Øverst ses et aktivitetsdiagram over mit spil.</p>
+            <p>Nederst ses et statemachine-diagram over mit spil</p>
+        </div>
+        <div class="img_prototype">
+            <div class="scroll-down-btn" onclick="scrollToNextSection"></div>
+            <img src="img_04/1.webp" alt="Beskrivelse af billedet">
+            <img src="img_04/5.webp" alt="Beskrivelse af billedet">
+            <img src="img_04/9.webp" alt="Beskrivelse af billedet">
+            <img src="img_04/3.webp" alt="Beskrivelse af billedet">
+            <img src="img_04/8.webp" alt="Beskrivelse af billedet">
+            <img src="img_04/6.webp" alt="Beskrivelse af billedet">
+            <img src="img_04/7.webp" alt="Beskrivelse af billedet">
+            <img src="img_04/4.webp" alt="Beskrivelse af billedet">
+            <img src="img_04/2.webp" alt="Beskrivelse af billedet">
+            <img src="img_04/aktivitetsdiagram.webp" alt="Beskrivelse af billedet">
+            <img src="img_04/statediagram.webp" alt="Beskrivelse af billedet">
+        </div>
+    </div>
+
+    <h4>Fokus på kodning</h4>
+    <div class="grid_kodning">
+        <div class="img_kodning">
+            <div class="scroll-down-btn" onclick="scrollToNextSection"></div>
+            <img src="img_03/kodning.webp" alt="Beskrivelse af billedet">
+            <img src="img_03/kodning2.webp" alt="Beskrivelse af billedet">
+            <img src="img_03/kodning3.webp" alt="Beskrivelse af billedet">
+            <img src="img_03/kodning4.webp" alt="Beskrivelse af billedet">
+        </div>
+        <div class="tekst_kodning">
+            <p>Grid 3 på forsiden var i starten lidt udfordrende. Jeg endte med at gøre således:
+            </p>
+            <p>Det er bygget op af en
+                container med 3 div'er, som skal placeres i to kolonner.
+
+                .flex_col_galleri2 er specifikt placeret i anden kolonne ved at skrive grid-column: 2;,
+            </p>
+            <p>For at få det første billede til at strække sig over to rækker har jeg givet .grid_1 egenskaben
+                grid-row: 1/3;</p>
+        </div>
+    </div>
+
+    <h4>Tests</h4>
+    <div class="grid_tests">
+        <div class="tekst_tests">
+            <p>Her ses svarene for nogle spørgsmål jeg havde stillet i et spørgeskema</p>
+        </div>
+        <div class="img_tests">
+            <div class="scroll-down-btn" onclick="scrollToNextSection"></div>
+            <img src="img_04/test1.webp" alt="Beskrivelse af billedet">
+            <img src="img_04/test2.webp" alt="Beskrivelse af billedet">
+            <img src="img_04/test3.webp" alt="Beskrivelse af billedet">
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <a href="om.html" class="footer-link">Om mig</a>
+            <a href="projekter.html" class="footer-link">Projekter</a>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-right">
+                <div class="social-icons">
+                    <a href="https://www.pinterest.dk/rmmathiesen/" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.linkedin.com/in/rose-marie-mathiesen-aa6432224/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

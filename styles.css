@@ -1,0 +1,657 @@
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+body {
+  line-height: 1.3;
+}
+
+/*Footer*/
+.social-icons a {
+  color: black;
+  text-decoration: none;
+  font-size: 27px;
+  margin: 0 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #333;
+  margin-top: 4rem;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-left img {
+  width: 7%;
+  margin-bottom: 20px; /* margin mellem billedet og links */
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 20px;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box; /* Inkluder padding og border i elementets samlede bredde og højde */
+  font-family: "Roboto", sans-serif;
+}
+
+/*Menu linje i desktop*/
+.logo img {
+  width: 20%;
+  margin: 3%;
+}
+
+header {
+  display: flex;
+  flex-direction: row; /* Dette skal være standard, men tjek alligevel */
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  margin-bottom: -2rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu,
+.menu2 {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 10%;
+}
+
+.menu li:last-child,
+.menu2 li:last-child {
+  margin-right: 0;
+}
+
+.menu li a:hover,
+.menu2 li a:hover {
+  font-weight: bold;
+}
+
+.menu a {
+  display: flex;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-size: 27px;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+
+.menu2 a {
+  color: white;
+  display: flex;
+  padding: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-size: 27px;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+
+.burger {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  margin: 0;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #000d3f;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+/* burgermenu i mobilsite */
+@media screen and (max-width: 800px) {
+  .menu,
+  .menu2 {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    z-index: 1;
+    background-color: #595959;
+  }
+
+  nav.active .menu li {
+    margin: 10px 0;
+  }
+
+  nav.active .menu a {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  li {
+    width: 100%;
+  }
+}
+
+/* Alt styling til tekst */
+.tekst_forside {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 219px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 2rem;
+}
+
+.flex_col .h5_class,
+.flex_col .p_class {
+  margin-top: 29px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 70%;
+}
+
+@media screen and (max-width: 800px) {
+  body h1 {
+    font-size: 90px;
+  }
+
+  body h2 {
+    font-size: 40px;
+    padding-top: 7%;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.underoverskrift_undersider {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 3rem;
+}
+
+.color-images {
+  display: none;
+}
+
+.projekter a {
+  text-decoration: none;
+}
+
+.projekter {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.projekter div {
+  font-size: 5em;
+  opacity: 0;
+  margin: 15px;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform: translateY(50px);
+}
+
+.projekter div.active {
+  opacity: 1;
+  transform: translateY(0);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.projekter a:hover {
+  font-weight: bold;
+}
+
+.tekst_om {
+  font-size: 150px;
+  padding-top: 2rem;
+  margin-left: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tekst_rosemarie {
+  font-size: 88px;
+  font-style: italic;
+  padding-top: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 12rem;
+  padding-bottom: 6rem;
+}
+@media screen and (max-width: 600px) {
+  .tekst_om {
+    font-size: 100px;
+    margin-left: -17rem;
+  }
+  .tekst_om_mig,
+  .tekst_kolonne {
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .tekst_rosemarie {
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    margin-left: 8rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.tekst_om_mig {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projekter_menu {
+  display: flex;
+  justify-content: center;
+}
+
+.projekter_menu a {
+  text-decoration: none;
+}
+
+.projekter_menu div {
+  padding: 30px;
+  display: flex;
+  font-size: 20px;
+  color: black;
+}
+
+.grid1_forside img,
+.grid2_forside img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tekst_kolonne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: 49px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  h3 {
+    font-size: 40px;
+  }
+}
+
+p,
+li {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+h4 {
+  font-size: 38px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #d9d9d9;
+  padding-bottom: 2rem;
+  padding-top: 5rem;
+  margin-bottom: 0;
+}
+
+.kvalifikationer_tekst {
+  font-size: 38px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  margin-bottom: 0;
+}
+
+.intro {
+  font-size: 23px;
+  margin-left: 17%;
+  margin-right: 17%;
+  padding-bottom: 2%;
+  font-family: "Roboto", sans-serif;
+}
+
+.følg_med_tekst {
+  padding-top: 2rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/* Carousel på alle undersider */
+
+.carousel img {
+  width: 1200px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-container {
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; /* For bedre scroll-opførsel på mobile enheder */
+  gap: 40px;
+}
+
+.carousel {
+  display: inline-flex;
+  gap: 40px;
+}
+
+/* Styling for mobilversion */
+@media screen and (max-width: 600px) {
+  .carousel-container {
+    margin-left: 0;
+  }
+
+  .carousel img {
+    width: 800px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.container {
+  justify-content: center; /* centrerer indholdet vandret */
+  align-items: center; /* centrerer indholdet lodret */
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.flex_col {
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.flex_col img {
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+h5 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.flex_col h5 {
+  margin-top: 29px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.flex_col:hover h5 {
+  color: #333;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.hele_grid {
+  background-color: #a69f97;
+}
+
+.projekter_farve {
+  background-color: #595959;
+}
+
+.billede_kolonne {
+  position: relative;
+}
+
+.billede1 {
+  width: 80%;
+  height: auto;
+}
+
+.billede2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: auto;
+  margin-right: 55px;
+  margin-bottom: -55px;
+  opacity: 0; /* gør billede 2 usynligt i starten */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.billede_kolonne:hover .billede2 {
+  opacity: 1; /* gør billede 2 synligt ved hover */
+}
+
+.tekst_resultat {
+  background-color: #d9d9d9;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: left;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-between; /* placerer elementerne i flex-container med lige mellemrum */
+}
+
+.tekst_resultat p {
+  font-size: 31px;
+  text-align: left;
+  word-wrap: break-word; /* gør at teksten bryder når den er for lang */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.my-button,
+.my-button2 {
+  padding: 20px 80px;
+  font-size: 23px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-position 0.3s ease-out;
+  text-decoration: none;
+  display: flex;
+  justify-content: center; /* centrerer indholdet vandret */
+  align-items: center; /* centrerer indholdet lodret */
+}
+.my-button2 {
+  margin-top: 10px;
+}
+.my-button:hover {
+  background-color: #7a8189;
+}
+.my-button2:hover {
+  background-color: #7a8189;
+}
+@media screen and (max-width: 600px) {
+  .tekst_resultat {
+    padding: 3rem;
+    align-items: center;
+    flex-wrap: wrap; /* Tilføjer wrap for at håndtere teksten, der går ned i næste linje */
+  }
+
+  .tekst_resultat p {
+    font-size: 24px;
+    text-align: left;
+    margin: 0;
+    margin-right: 20px;
+    flex: 1; /* Får teksten til at tage op al tilgængelig plads */
+  }
+
+  .my-button {
+    padding: 20px 40px;
+    font-size: 23px;
+  }
+
+  .my-button2 {
+    padding: 20px 40px;
+    font-size: 23px;
+    margin-top: 10px;
+  }
+}
+
+/*viser hvilken side man er inde på*/
+.projekter_menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.projekter_menu .current {
+  color: #333;
+  font-size: 30px;
+}
+
+.img_ide,
+.img_prototype,
+.img_kodning,
+.img_tests {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.scroll-down-btn {
+  position: sticky;
+  top: 20px; /* Juster afstanden fra toppen efter behov */
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 30px;
+  transition: transform 0.2s ease;
+  margin-top: -20px; /* Juster dette, hvis nødvendigt */
+}
+
+.scroll-down-btn::before {
+  content: "";
+  border: solid #0c0b0b;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 7px;
+  transform: rotate(45deg);
+}
+
+/* For at tilføje en lille animation ved tryk */
+.scroll-down-btn:active {
+  transform: translateY(2px);
+}
+
+/* For at tilføje en lille animation ved hover */
+.scroll-down-btn:hover::before {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  5% {
+    transform: translateY(-5px);
+  }
+}

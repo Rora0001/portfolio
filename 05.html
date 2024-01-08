@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/delfin.webp" alt=""></a>
+        </div>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="projekter.html">Projekter</a></li>
+                <li><a href="om.html">Om mig</a></li>
+            </ul>
+        </nav>
+
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <div class="projekter_menu">
+        <a href="02.html">
+            <div class="02">02</div>
+        </a>
+        <a href="03.html">
+            <div class="03">03</div>
+        </a>
+        <a href="04.html">
+            <div class="04">04</div>
+        </a>
+        <a href="05.html">
+            <div class="05 current">05</div>
+        </a>
+        <a href="06.html">
+            <div class="06">06</div>
+        </a>
+    </div>
+
+    <h3>GRUNDLÆGGENDE INDHOLD</h3>
+
+    <div class="intro"> I tema 05 blev vi introduceret for videoproduktion og hele processen. Vi har arbejdet med
+        Premiere pro, ekstern lyd, storyboards og 5-skudsreglen. I slutningen af dette tema
+        fik vi som opgave at bruge vores viden fra video samt vores færdigheder fra foregående temaer til at redesigne
+        en virksomheds hjemmeside med brug af SCRUM-elementer. Vi har derudover beskæftiget os med diverse tests som
+        eksperttest (heuristisk test),
+        5-sek test og tænke-højt-test.
+    </div>
+
+
+
+    <div class="tekst_resultat">
+        <p>Følg med i min process over redesignet nedenfor</p>
+        <div class="button-container">
+            <a href="https://rora0001.github.io/verandavin/" target="_blank" class="my-button">Redesign</a>
+            <a href="https://rosecreatives.dk/kea/05_indhold/website/" target="_blank" class="my-button2">Byens
+                Landhandel site</a>
+        </div>
+    </div>
+
+    <div class="carousel-container">
+        <div class="img_resultat carousel">
+            <img src="img_05/resultat1.webp" alt="Beskrivelse af billedet">
+            <img src="img_05/resultat2.webp" alt="Beskrivelse af billedet">
+            <img src="img_05/resultat3.webp" alt="Beskrivelse af billedet">
+            <img src="img_05/resultat4.webp" alt="Beskrivelse af billedet">
+            <img src="img_05/resultat5.webp" alt="Beskrivelse af billedet">
+        </div>
+    </div>
+
+    <h2>Min process</h2>
+
+    <h4>Research og idé fasen</h4>
+    <div class="grid_ide">
+        <div class="img_ide">
+            <div class="scroll-down-btn" onclick="scrollToNextSection"></div>
+            <img src="img_05/mood.webp" alt="Beskrivelse af billedet">
+            <img src="img_05/skitser.webp" alt="Beskrivelse af billedet">
+            <img src="img_05/skitser2.webp" alt="Beskrivelse af billedet">
+        </div>
+        <div class="tekst_ide">
+            <p>Vi ville gerne lave noget for en virksomhed hvor vi kunne sætte os ind i deres branding osv. Derfor en
+                vin bar eller
+                lign og så i lokalområdet (Nørrebro).
+                Vi kiggede rundt på Instagram og fandt flere forskellige virksomheder som vi kontaktede. Veranda Vin som
+                flere af os i
+                gruppen kender til svarede at de var meget interesseret og selv havde overvejet at få den redesignet.
+            </p>
+        </div>
+    </div>
+
+    <h4>Prototype</h4>
+    <div class="grid_prototype">
+        <div class="tekst_prototype">
+            <p>Wireframes hi-fi og lo-fi</p>
+            <div class="button-container">
+                <a href="https://www.verandavin.dk" target="_blank" class="my-button">Se
+                    nuværende site</a>
+            </div>
+        </div>
+        <div class="img_prototype">
+            <div class="scroll-down-btn" onclick="scrollToNextSection"></div>
+            <img src="img_05/styletile1.webp" alt="Beskrivelse af billedet">
+            <img src="img_05/styletile2.webp" alt="Beskrivelse af billedet">
+            <img src="img_05/forside.webp" alt="Beskrivelse af billedet">
+            <img src="img_05/wireframe1.webp" alt="Beskrivelse af billedet">
+            <img src="img_05/wireframe2.webp" alt="Beskrivelse af billedet">
+        </div>
+    </div>
+
+
+    <h4>Fokus på kodning</h4>
+    <div class="grid_kodning">
+        <div class="img_kodning">
+            <video width="740" height="460" controls>
+                <source src="img_05/8.mp4" type="video/mp4">
+                Din browser understøtter ikke videoafspilning.
+            </video>
+            <video width="740" height="460" controls>
+                <source src="img_05/9.mp4" type="video/mp4">
+                Din browser understøtter ikke videoafspilning.
+            </video>
+        </div>
+
+        <div class="tekst_kodning">
+            <p>Den første kode jeg gerne vil fremhæve er en fade-in effekt på nogle af billederne blandt andet på siden
+                “events”. Her
+                er der gjort brug af eventlistener. Når man scroller ned på siden aktiveres en pop op funktion på den
+                ene billede.
+            </p>
+            <p>
+                Den anden kode jeg vil fremhæve er effekten på månen på forsiden. Effekten har vi fundet på Animista.com
+                og tilpasset
+                til denne kode og sat den ind i Java Script.</p>
+        </div>
+    </div>
+
+    <h4>Tests</h4>
+    <div class="grid_tests">
+        <div class="tekst_tests">
+            <p>Her ses de forskellige tests vi har lavet på det nuværende site og vores redesign. Alt i alt har vi skabt
+                et site som er
+                meget mere brugervenligt og man kan bruge site til noget relevant. Derudover er det også designmæssigt
+                mere
+                harmonistisk.
+
+                Desuden vil Veranda Vin gerne bruge designet og have os til at kode hjemmesiden for dem her når vi er
+                færdige med vores
+                eksamener.</p>
+        </div>
+        <div class="img_tests">
+            <div class="scroll-down-btn" onclick="scrollToNextSection"></div>
+            <img src="img_05/lighthousetest.webp" alt="Beskrivelse af billedet">
+            <img src="img_05/test1.webp" alt="Beskrivelse af billedet">
+            <img src="img_05/test4.webp" alt="Beskrivelse af billedet">
+            <img src="img_05/test2.webp" alt="Beskrivelse af billedet">
+            <img src="img_05/test3.webp" alt="Beskrivelse af billedet">
+        </div>
+    </div>
+
+    <h4>Videoproduktion</h4>
+    <div class="grid_video">
+        <div class="img_video">
+            <img src="img_05/storyboard.webp" alt="Beskrivelse af billedet">
+        </div>
+        <div class="tekst_video">
+            <p>Til interviewet stillede vi følgende spørgsmål:</p>
+            <ul>
+                <li>Hvordan og hvornår åbnede Veranda?</li>
+                <li>Hvordan og hvornår åbnede Veranda?</li>
+                <li>Hvordan skiller stedet sig ud fra andre?</li>
+                <li>Hvilken stemning forsøger I at skabe her?</li>
+                <li>Hvorfor skal man besøge Veranda?</li>
+            </ul>
+            <p>
+                Videoen er et interview med indehaveren af Veranda, som fortæller om barens koncept og mål i forhold til
+                bæredygtigt
+                indkøb af naturvin.
+
+                Vi har valgt at filme med vinbaren som baggrund for at fange den hyggelige stemning på Veranda, samt at
+                gøre det
+                tydeligt at det er en vinbar videoen handler om. Dette kommer også til udtryk i vores storyboard.
+            </p>
+
+            <p>Under selve optagelsen brugte vi en Iphone 13 med en DJI Mimo Pocket attachment som vores primære kamera.
+                For at sikre
+                optimal lydkvalitet anvendte vi en knapmikrofon.</p>
+            <p>
+                Vi stødte på nogle udfordringer med lydsporet fra knapmikrofonen under redigeringsprocessen, og endte
+                derfor med at
+                anvende det oprindelige lydspor i den endelige video. Vi har forsøgt at reducere baggrundsstøj og
+                forbedre lydkvaliteten
+                ved hjælp af Premiere Pro's automatic repair og clip gain funktioner.</p>
+            <iframe src="https://www.youtube.com/embed/MjKiSJqKP30"></iframe>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <a href="om.html" class="footer-link">Om mig</a>
+            <a href="projekter.html" class="footer-link">Projekter</a>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-right">
+                <div class="social-icons">
+                    <a href="https://www.pinterest.dk/rmmathiesen/" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.linkedin.com/in/rose-marie-mathiesen-aa6432224/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
