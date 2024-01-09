@@ -1,19 +1,27 @@
 // burgermenu
-const burger = document.querySelector(".burger");
+const burger = document.querySelectorAll(".burger, .burger2");
 const nav = document.querySelector("nav");
-const menu = document.querySelector(".menu");
-const links = document.querySelectorAll(".menu li a");
+const menu = document.querySelectorAll(".menu, .menu2");
+const links = document.querySelectorAll(".menu li a, .menu2 li a");
 
-burger.addEventListener("click", () => {
-  console.log("click");
-  burger.classList.toggle("active");
-  nav.classList.toggle("active");
+burger.forEach((burgerElement, index) => {
+  burgerElement.addEventListener("click", () => {
+    console.log("click");
+    burgerElement.classList.toggle("active");
+    nav.classList.toggle("active");
+    menu[index].classList.toggle("active");
+  });
 });
 
 links.forEach((link) => {
   link.addEventListener("click", () => {
-    burger.classList.remove("active");
+    burger.forEach((burgerElement) => {
+      burgerElement.classList.remove("active");
+    });
     nav.classList.remove("active");
+    menu.forEach((menuElement) => {
+      menuElement.classList.remove("active");
+    });
   });
 });
 

@@ -118,7 +118,8 @@ nav {
   font-family: "Lato", sans-serif;
 }
 
-.burger {
+.burger,
+.burger2 {
   width: 30px;
   height: auto;
   cursor: pointer;
@@ -128,11 +129,21 @@ nav {
 .burger .line {
   width: 100%;
   height: 2px;
-  background-color: #000d3f;
+  background-color: black;
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
-.burger {
+
+.burger2 .line {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+.burger,
+.burger2 {
   display: none;
 }
 
@@ -142,25 +153,41 @@ nav {
   .menu2 {
     display: none;
   }
-  .burger {
+  .burger,
+  .burger2 {
     display: block;
+    width: 40px; /* Øg bredden efter behov */
+    height: 40px; /* Øg højden efter behov */
   }
-  .burger.active .line:nth-child(1) {
+
+  .burger.active .line {
+    background-color: black; /* Ændre farven på burgermenuens linjer ved aktiv tilstand */
+  }
+
+  .burger2.active .line {
+    background-color: white;
+  }
+
+  .burger.active .line:nth-child(1),
+  .burger2.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
     transition: 0.2s linear;
   }
 
-  .burger.active .line:nth-child(2) {
+  .burger.active .line:nth-child(2),
+  .burger2.active .line:nth-child(2) {
     opacity: 0;
     transition: 0.15s linear;
   }
 
-  .burger.active .line:nth-child(3) {
+  .burger.active .line:nth-child(3),
+  .burger2.active .line:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
     transition: 0.2s linear;
   }
 
-  nav.active .menu {
+  nav.active .menu,
+  nav.active .menu2 {
     display: block;
     position: absolute;
     top: 60px;
@@ -169,16 +196,18 @@ nav {
     background-color: #595959;
   }
 
-  nav.active .menu li {
+  .nav.active .menu li,
+  .nav.active .menu2 li {
     margin: 10px 0;
   }
 
-  nav.active .menu a {
+  .nav.active .menu a,
+  .nav.active .menu2 a {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  li {
+  .li {
     width: 100%;
   }
 }
@@ -233,7 +262,6 @@ h2 {
   font-size: 22px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 3rem;
 }
 
 .color-images {
@@ -286,7 +314,7 @@ h2 {
   margin-left: 12rem;
   padding-bottom: 6rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .tekst_om {
     font-size: 100px;
     margin-left: -17rem;
@@ -343,8 +371,15 @@ h2 {
 .tekst_kolonne {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
+  padding-right: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+  .tekst_kolonne {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 h3 {
@@ -352,12 +387,6 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 1rem;
   text-align: center;
-}
-
-@media screen and (max-width: 600px) {
-  h3 {
-    font-size: 40px;
-  }
 }
 
 p,
@@ -376,11 +405,17 @@ h4 {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 800px) {
+  h4 {
+    margin-bottom: 0;
+  }
+}
+
 .kvalifikationer_tekst {
   font-size: 38px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   padding-top: 3rem;
   margin-bottom: 0;
 }
@@ -398,7 +433,7 @@ h4 {
   font-weight: 600;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .intro {
     font-size: 20px;
     margin-left: 5%;
@@ -559,7 +594,7 @@ h5 {
 .my-button2:hover {
   background-color: #7a8189;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .tekst_resultat {
     padding: 3rem;
     align-items: center;

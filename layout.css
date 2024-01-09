@@ -251,7 +251,6 @@
   .grid_video {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 3%;
     overflow: hidden;
   }
 
