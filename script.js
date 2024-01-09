@@ -41,7 +41,7 @@ function startImageRotation() {
     document.getElementById("img_" + currentIndex).src = document.getElementById("colorImage_" + currentIndex).src;
 
     setTimeout(function () {
-      rotateImages(); // Kalder rekursivt funktionen igen for at fortsætte rotationen
+      rotateImages(); // kalder rekursivt funktionen igen for at fortsætte rotationen
     }, 2000); //  tiden (2 sekunder)
   }
 }
@@ -65,9 +65,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 document.addEventListener("DOMContentLoaded", function () {
   const carouselContainer = document.querySelector(".carousel-container");
 
-  carouselContainer.addEventListener("scroll", function () {
-    // Add any additional logic based on scroll position if needed
-  });
+  carouselContainer.addEventListener("scroll", function () {});
 });
 
 //vis hvilken undersider man er inde på
