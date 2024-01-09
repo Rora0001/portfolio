@@ -506,7 +506,7 @@ h4 {
 .carousel-container {
   overflow-x: scroll;
   white-space: nowrap;
-  -webkit-overflow-scrolling: touch; /* For bedre scroll-opførsel på mobile enheder */
+  -webkit-overflow-scrolling: touch; /* bedre scroll-opførsel på mobile enheder */
   gap: 40px;
 }
 
@@ -653,7 +653,7 @@ h4 {
   .tekst_resultat {
     padding: 3rem;
     align-items: center;
-    flex-wrap: wrap; /* Tilføjer wrap for at håndtere teksten, der går ned i næste linje */
+    flex-wrap: wrap;
   }
 
   .tekst_resultat p {
@@ -661,7 +661,7 @@ h4 {
     text-align: left;
     margin: 0;
     margin-right: 20px;
-    flex: 1; /* Får teksten til at tage op al tilgængelig plads */
+    flex: 1;
   }
 
   .my-button {
