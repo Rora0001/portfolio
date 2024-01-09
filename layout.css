@@ -157,6 +157,16 @@
   padding-right: 1rem;
 }
 
+@media screen and (min-width: 800px) and (max-width: 1440px) {
+  .grid_1_mig {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .grid_1_mig {
     display: grid;
@@ -197,6 +207,7 @@
 
 .grid_ide,
 .grid_kodning,
+.grid_kodning2,
 .grid_tests,
 .grid_video {
   margin-left: 0;
@@ -243,6 +254,8 @@
   margin-bottom: 30px;
 }
 
+/* Omvend rækkefølgen for prototype og tests på side 04 */
+
 @media screen and (max-width: 800px) {
   .grid_ide,
   .grid_prototype,
@@ -262,6 +275,7 @@
   .tekst_video {
     position: relative;
     margin-bottom: 20px;
+    margin-top: 0;
   }
 
   .tekst_ide h3,

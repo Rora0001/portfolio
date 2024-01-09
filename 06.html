@@ -54,11 +54,12 @@
     <h3>PORTFOLIO EKSAMEN</h3>
 
     <div class="intro">I tema 06 skulle vi skabe vores egen portfolio, der præsenterer vores arbejde i det første
-        semester på KEA. Et website skabt ud fra vores eget design og brug af HTML, CSS og JavaScript. Dette website
-        fungerer
-        som en visuel repræsentation af mig som person samt viser mine løsninger på de forskellige opgaver, vi har fået
-        stillet.
-        Det har været en meget lærerig tid, hvor jeg er blevet introduceret til alt fra JavaScript til
+        semester på KEA. Et website
+        skabt ud fra vores eget design og brug af HTML, CSS og JavaScript. Dette website fungerer som en visuel
+        repræsentation
+        af mig som person samt viser mine løsninger på de forskellige opgaver, vi har fået stillet. Det har været en
+        meget
+        lærerig tid, hvor jeg har haft mulighed for at udfolde mig med hensyn til alt fra JavaScript til
         designkonventioner.
     </div>
 
@@ -91,42 +92,67 @@
             <img src="img_06/ide2.webp" alt="Beskrivelse af billedet">
         </div>
         <div class="tekst_ide">
-            <p>Min website tager meget udgangspunkt i min egen stil så jeg har forsøgt at kombinere det med en
-                funktionel opbygning.
-                Min research og idé generering har jeg gjort på Pinterest samt ved brug af desk research.</p>
-            <p>Primært disse tre websites hvor jeg har taget inspiration fra forskellige features.</p>
+            <div class="underoverskrift_undersider">Første step</div>
+            <p>Første step i min process har været at se på Pinterest og andre lignende websites.</p>
+            <p>Efterhånden kom jeg frem til en stil jeg gik med. Den tager meget udgangspunkt i min egen stil kombineret
+                med brugervenlighed og brugerflows som jeg synes skaber et godt flow på en hjemmeside.</p>
 
+            <div class="underoverskrift_undersider">Formål</div>
+            <p>Jeg ønsker at vise, hvad jeg har arbejdet med det første semester på KEA. Formålet er at udtrykke min
+                kreative sans og
+                give et indblik i, hvem jeg er. Jeg vil demonstrere mine evner inden for HTML, CSS og JavaScript og
+                design.</p>
+
+            <div class="underoverskrift_undersider">Desk research</div>
+            <p>Jeg har i høj grad benyttet desk research til at strukturere mine sider.</p>
+            <p>Jeg har primært hentet inspiration fra tre websites.</p>
             <p>For eksempel scrolle-effekten, hvor den ene side scroller mens den anden står fast:
                 <a href="https://www.rudolphcare.com/da/om/om-rudolph-care/"
                     target="_blank">https://www.rudolphcare.com/da/om/om-rudolph-care/</a>
             </p>
-
             <p>Designet hvor der er sat en baggrundsfarve under billederne, for at få samme udtryk på alle mine
                 undersider:
                 <a href="https://www.lessestudio.com/portfolio/ace"
                     target="_blank">https://www.lessestudio.com/portfolio/ace</a>
-            </p>
-
             <p>Footeren som er stilren og enkel I designet:
                 <a href="https://www.studioetta.co" target="_blank">https://www.studioetta.co</a>
             </p>
 
-
+            <div class="underoverskrift_undersider">Personligt præg</div>
+            <p>Jeg har forsøgt at tilføre en personlig touch ved at inkludere billeder på forsiden fra mit personlige
+                liv, som jeg
+                mener beskriver mig godt.</p>
+            <p>Mit logo startede med at være et R tegnet i Illustrator, men det endte med at blive en delfin tegnet i
+                Illustrator. Delfinnen har altid været et kendetegn for mig lige siden jeg var helt lille og så synes
+                sjeg også den er æstetisk pæn.</p>
         </div>
     </div>
 
     <h4>Prototype</h4>
     <div class="grid_prototype">
         <div class="tekst_prototype">
-            <p>wireframes hi fi og lo fi</p>
+            <div class="underoverskrift_undersider">Wireframes</div>
+            <p>Her ses hi-fi og lo-fi wireframes over det endelige site. De er blevet ændre en del undervejs eftersom
+                jeg har
+                taget tests på min hjemmeside.</p>
+
+            <div class="underoverskrift_undersider">Værdiord</div>
+            <ul>
+                <li>Dæmpede farver for at undgå for meget opmærksomhed på farverne og bevare fokus på billederne
+                </li>
+                <li>Æstetiske billeder</li>
+                <li>Rar stemning</li>
+                <li>Design med et visuelt udtryk (mange billeder)</li>
+                <li>Fonte: Klassiske, gammeldags, letlæselige</li>
+                <li>Ikke for mange forstyrrende elementer, da fokus
+                    skal være på billeder og indholdet</li>
+            </ul>
         </div>
         <div class="img_prototype">
             <div class="scroll-down-btn" onclick="scrollToNextSection"></div>
-            <img src="img_03/indhold.webp" alt="Beskrivelse af billedet">
-            <img src="img_03/indhold2.webp" alt="Beskrivelse af billedet">
-            <img src="img/img_03.webp" alt="Beskrivelse af billedet">
-            <img src="img/img_03.webp" alt="Beskrivelse af billedet">
-            <img src="img/img_03.webp" alt="Beskrivelse af billedet">
+            <img src="img_06/styletile.webp" alt="Beskrivelse af billedet">
+            <img src="img_06/wireframe1.webp" alt="Beskrivelse af billedet">
+            <img src="img_06/wireframe2.webp" alt="Beskrivelse af billedet">
         </div>
     </div>
 
@@ -137,43 +163,112 @@
             <img src="img_06/kode1.webp" alt="Beskrivelse af billedet">
             <img src="img_06/kode2.webp" alt="Beskrivelse af billedet">
             <img src="img_06/kode3.webp" alt="Beskrivelse af billedet">
-
         </div>
         <div class="tekst_kodning">
-            <p></p>
+            <div class="underoverskrift_undersider">Fokus på billedeskiftet på forsiden</div>
+            <p>Koden anvender JavaScript til at implementere billedeskift på forsiden. Når siden er indlæst, startes
+                funktionen
+                startImageRotation(). Den bruger en event listener til at kalde rotateImages(), som skifter mellem
+                sort-hvide og farvede
+                billeder i et galleri.</p>
+            <p>Billederne er placeret i to separate div-elementer med klassenavne "gallery" og "color-images". Hvert
+                billede har sit
+                eget id, som bruges til at identificere og manipulere dem i JavaScript-koden. Dermed starter den med det
+                første
+                sort-hvide billede og skifter derefter til det første farvebillede og fortsætter sådan.</p>
+            <p>Jeg har skjult sektionen med farvebilleder ved at anvende display: none; så de ikke er fremme hele
+                tiden.</p>
+            <div class="underoverskrift_undersider">Fokus på scrolle effekten på undersiderne</div>
+            <p>Den anden kode, jeg vil nævne, vedrører mine grids på undersiderne. Her har jeg to kolonner, hvor man i
+                billedkolonnen
+                kan scrolle nedad.</p>
+            <p>For at opnå dette har jeg anvendt overflow-y: auto; og max-height: 100vh;, så de kan scrolle, men ikke
+                uendeligt</p>
         </div>
     </div>
 
     <h4>Tests</h4>
     <div class="grid_tests">
         <div class="tekst_tests">
-            <p></p>
-        </div>
-        <div class="img_tests">
-            <div class="scroll-down-btn" onclick="scrollToNextSection"></div>
-            <img src="img_03/kodning.webp" alt="Beskrivelse af billedet">
-            <img src="img_03/kodning2.webp" alt="Beskrivelse af billedet">
-            <img src="img_03/kodning3.webp" alt="Beskrivelse af billedet">
+            <div class="underoverskrift_undersider">De første tests</div>
+
+            <p> De første tests, jeg udførte i min proces, var primært 5-sekunders tests og tænke-højt-tests, hvilket
+                resulterede i
+                følgende ændringer:</p>
+
+            <p>Slideshowet øverst på alle sider skal nu have mulighed for, at brugeren selv kan scrolle i det, i stedet
+                for at det
+                kører automatisk.</p>
+
+            <p>På undersiderne skulle kategorierne og billederne være mere tydeligt opdelte, så jeg har tilføjet en
+                baggrundsfarve til
+                hver del.</p>
+
+            <p>På undersiderne, hvor man kan scrolle ned ved billederne, ønskede jeg tydeliggøre muligheden for at
+                scrolle ned, da det
+                nogle gange kunne overses. Derfor har jeg tilføjet en pil øverst, der indikerer dette.</p>
+            <div class="underoverskrift_undersider">Tænkte-højt-test i slutningen af processen</div>
+            <p>Jeg udførte tænke-højt-tests med fire testpersoner, hvor de blev bedt om at løse følgende opgaver:</p>
+            <ul>
+                <li>Find linket til redesignet af Veranda Vin's website.</li>
+                <li>Find min e-mailadresse.</li>
+                <li>Læs om min proces i tema 03.</li>
+            </ul>
+            <p>Alle løste opgaverne uden problemer.</p>
         </div>
 
-        <footer>
-            <div class="footer-left">
-                <a href="om.html" class="footer-link">Om mig</a>
-                <a href="projekter.html" class="footer-link">Projekter</a>
-            </div>
+        <div class="tekst_tests">
 
+            <div class="underoverskrift_undersider">Tænke-højt-test og five-act-interview</div>
+            <p>Første testperson:</p>
+            <ul>
+                <li>Brugervenligt design</li>
+                <li>Kan godt lide delfin logoet, hvor man kommer tilbage til forsiden.</li>
+                <li>Der hvor fonten bliver større når man står inde på et projekt, der kan den godt være bold i stedet.
+                    Det er mere logisk
+                    at det er den side man er inden på.</li>
+                <li>Kan godt lide design og layout</li>
+                <li>Links virker ikke til pinterest og linked på projekt 06</li>
+            </ul>
+
+            <p>Anden testperson:</p>
+            <ul>
+                <li>Fed stil og flotte farver</li>
+                <li>God rød tråd gennem hele hjemmesiden.</li>
+            </ul>
+
+            <p>Tredje testperson:</p>
+            <ul>
+                <li>Vild med farverne</li>
+                <li>Sammensætningen af billeder på forsiden er god.</li>
+                <li>Delfinen er et hit.</li>
+                <li>Designet er pænt.</li>
+                <li>Det ville være fedt, hvis billederne øverst på forsiden kunne have farve i længere tid ad gangen, så
+                    man kan nå at se
+                    dem.</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="footer-left">
+            <a href="om.html" class="footer-link">Om mig</a>
+            <a href="projekter.html" class="footer-link">Projekter</a>
+        </div>
+
+        <div class="footer-right">
             <div class="footer-right">
-                <div class="footer-right">
-                    <div class="social-icons">
-                        <a href="https://www.pinterest.dk/rmmathiesen/" target="_blank"><i
-                                class="fab fa-pinterest"></i></a>
-                        <a href="https://www.linkedin.com/in/rose-marie-mathiesen-aa6432224/" target="_blank"><i
-                                class="fab fa-linkedin"></i></a>
-                    </div>
+                <div class="social-icons">
+                    <a href="https://www.pinterest.dk/rmmathiesen/" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.linkedin.com/in/rose-marie-mathiesen-aa6432224/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 
 </body>

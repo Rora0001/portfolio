@@ -25,7 +25,7 @@ links.forEach((link) => {
   });
 });
 
-//billedeskift
+//billedeskift på forsiden
 document.addEventListener("DOMContentLoaded", function () {
   startImageRotation();
 });
@@ -41,9 +41,8 @@ function startImageRotation() {
     document.getElementById("img_" + currentIndex).src = document.getElementById("colorImage_" + currentIndex).src;
 
     setTimeout(function () {
-      document.getElementById("img_" + currentIndex).src = originalSource;
       rotateImages(); // Kalder rekursivt funktionen igen for at fortsætte rotationen
-    }, 500);
+    }, 2000); //  tiden (2 sekunder)
   }
 }
 
