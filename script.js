@@ -35,7 +35,7 @@ function startImageRotation() {
   rotateImages();
 
   function rotateImages() {
-    currentIndex = (currentIndex % 6) + 1; // 6 er det totale antal billeder i dit galleri
+    currentIndex = (currentIndex % 6) + 1; // det totale antal billeder
 
     var originalSource = document.getElementById("img_" + currentIndex).src;
     document.getElementById("img_" + currentIndex).src = document.getElementById("colorImage_" + currentIndex).src;
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   async function showText(index) {
     if (index < elements.length) {
       elements[index].classList.add("active");
-      await new Promise((resolve) => setTimeout(resolve, 500)); // Juster forsinkelsen (500ms = 0.5s) baseret på din præference
+      await new Promise((resolve) => setTimeout(resolve, 500)); // (500ms = 0.5s)
       await showText(index + 1);
     }
   }

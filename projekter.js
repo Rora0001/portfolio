@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   async function showText(index) {
     if (index < elements.length) {
       elements[index].classList.add("active");
-      await new Promise((resolve) => setTimeout(resolve, 500)); // Juster forsinkelsen (500ms = 0.5s) baseret på din præference
+      await new Promise((resolve) => setTimeout(resolve, 500)); //  (500ms = 0.5s)
       await showText(index + 1);
     }
   }

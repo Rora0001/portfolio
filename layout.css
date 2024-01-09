@@ -254,8 +254,6 @@
   margin-bottom: 30px;
 }
 
-/* Omvend rækkefølgen for prototype og tests på side 04 */
-
 @media screen and (max-width: 800px) {
   .grid_ide,
   .grid_prototype,
@@ -314,7 +312,6 @@
 }
 
 /*struktur for side 05 kodning*/
-
 .img_kodning video {
   margin-bottom: 3rem; /* Mellemrum på 3 rem under hvert video-element */
   width: 100%;

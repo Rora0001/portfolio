@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f2f2f2;
   margin: 0;
@@ -5,10 +9,6 @@ body {
 
 body {
   line-height: 1.5;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 /*Footer*/
@@ -42,7 +42,7 @@ footer {
 
 .footer-left img {
   width: 7%;
-  margin-bottom: 20px; /* margin mellem billedet og links */
+  margin-bottom: 20px;
 }
 
 .footer-link {
@@ -52,7 +52,7 @@ footer {
   font-size: 20px;
   text-align: left;
   width: 100%;
-  box-sizing: border-box; /* Inkluder padding og border i elementets samlede bredde og højde */
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
@@ -64,7 +64,7 @@ footer {
 
 header {
   display: flex;
-  flex-direction: row; /* Dette skal være standard, men tjek alligevel */
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
@@ -173,12 +173,12 @@ nav {
   .burger,
   .burger2 {
     display: block;
-    width: 40px; /* Øg bredden efter behov */
-    height: 40px; /* Øg højden efter behov */
+    width: 40px;
+    height: 40px;
   }
 
   .burger.active .line {
-    background-color: black; /* Ændre farven på burgermenuens linjer ved aktiv tilstand */
+    background-color: black;
   }
 
   .burger2.active .line {
@@ -418,6 +418,12 @@ h3 {
   text-align: center;
 }
 
+h5 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
 @media screen and (max-width: 800px) {
   h3 {
     font-size: 40px;
@@ -544,12 +550,6 @@ h4 {
   max-width: 85%;
   display: block;
   margin: 0 auto;
-}
-
-h5 {
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
 }
 
 .flex_col h5 {
@@ -720,9 +720,10 @@ h5 {
   overflow: hidden;
 }
 
+/*lille pil der viser man kan scrolle ned*/
 .scroll-down-btn {
   position: sticky;
-  top: 20px; /* Juster afstanden fra toppen efter behov */
+  top: 20px;
   left: 50%;
   display: flex;
   flex-direction: column;
@@ -732,7 +733,7 @@ h5 {
   cursor: pointer;
   font-size: 30px;
   transition: transform 0.2s ease;
-  margin-top: -20px; /* Juster dette, hvis nødvendigt */
+  margin-top: -20px;
 }
 
 .scroll-down-btn::before {
@@ -744,12 +745,12 @@ h5 {
   transform: rotate(45deg);
 }
 
-/* For at tilføje en lille animation ved tryk */
+/* en lille animation ved tryk */
 .scroll-down-btn:active {
   transform: translateY(2px);
 }
 
-/* For at tilføje en lille animation ved hover */
+/* en lille animation ved hover */
 .scroll-down-btn:hover::before {
   animation: bounce 1s infinite;
 }
